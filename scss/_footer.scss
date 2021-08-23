@@ -1,0 +1,10 @@
+/*pie de pagina*/
+footer{
+	margin:0;
+    text-align: center;
+    background-image: linear-gradient(to right,black,grey);
+}
+article, footer{
+	flex:1;
+	margin:0;
+}

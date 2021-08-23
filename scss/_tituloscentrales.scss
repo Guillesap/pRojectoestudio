@@ -1,0 +1,99 @@
+/*titulos y frases*/
+
+h1 {
+    color: $color-tres;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2cm;
+    font-family: Tourney;
+    text-decoration: underline;
+}
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgb(93, 92, 100);
+    padding: 10px;
+    font-size: 11mm;
+}
+h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgb(238, 229, 227);
+    padding: 10px;
+    font-size: 1cm;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation-duration: 20s;
+    animation-name: aparecer;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+h4 {
+    text-align: center;
+    color: rgb(6, 8, 160);
+    font-family: 'Courier New', Courier, monospace;
+}
+h5 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgb(17, 20, 11);
+    padding: 10px;
+    font-size: 10mm;
+}
+
+p {
+    color:rgb(202, 200, 194);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5mm;
+}
+
+
+/*titulos transicion*/
+.paraTransicion:hover {
+    transition: 3s;
+    font-size: 4rem;
+    color: rgb(51, 221, 8);
+    padding: 1cm;
+}
+
+/*fotos centrales de cada pagina*/
+
+.bAnner {
+    display: flex;
+    justify-content: center;
+    padding: 1cm;
+}
+.cIvil{
+    display: flex;
+    justify-content: center;
+    padding: 1cm;
+}
+.lAboral{
+    display: flex;
+    justify-content: center;
+    padding: 1cm;
+}
+.pEnal{
+    display: flex;
+    justify-content: center;
+    padding: 1cm;
+}
+.cOntacto{
+    display: flex;
+    justify-content: center;
+    padding: 1cm;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}

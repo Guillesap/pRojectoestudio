@@ -1,0 +1,1005 @@
+/*normalizadores*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #0e0c80;
+}
+
+/*globales*/
+body {
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  background: -webkit-linear-gradient(45deg, #b2cac9 0%, #1f2c1c 51%, #281c25 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #45484d 0%, black 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#45484d", endColorstr="#000000",GradientType=1 );
+  /* IE6-9 */
+}
+
+/*formulario pagina contacto*/
+form {
+  text-align: center;
+  color: grey;
+}
+
+/*pie de pagina*/
+footer {
+  margin: 0;
+  text-align: center;
+  background-image: linear-gradient(to right, black, grey);
+}
+
+article, footer {
+  flex: 1;
+  margin: 0;
+}
+
+/*titulos y frases*/
+h1 {
+  color: grey;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 2cm;
+  font-family: Tourney;
+  text-decoration: underline;
+}
+
+h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #5d5c64;
+  padding: 10px;
+  font-size: 11mm;
+}
+
+h3 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #eee5e3;
+  padding: 10px;
+  font-size: 1cm;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  animation-duration: 20s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h4 {
+  text-align: center;
+  color: #0608a0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h5 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #11140b;
+  padding: 10px;
+  font-size: 10mm;
+}
+
+p {
+  color: #cac8c2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5mm;
+}
+
+/*titulos transicion*/
+.paraTransicion:hover {
+  transition: 3s;
+  font-size: 4rem;
+  color: #33dd08;
+  padding: 1cm;
+}
+
+/*fotos centrales de cada pagina*/
+.bAnner {
+  display: flex;
+  justify-content: center;
+  padding: 1cm;
+}
+
+.cIvil {
+  display: flex;
+  justify-content: center;
+  padding: 1cm;
+}
+
+.lAboral {
+  display: flex;
+  justify-content: center;
+  padding: 1cm;
+}
+
+.pEnal {
+  display: flex;
+  justify-content: center;
+  padding: 1cm;
+}
+
+.cOntacto {
+  display: flex;
+  justify-content: center;
+  padding: 1cm;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*asesoramiento y abonos*/
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1cm;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: dotted 7px #e4e7de;
+  -moz-border-radius-topleft: 61px;
+  -moz-border-radius-topright: 61px;
+  -moz-border-radius-bottomleft: 52px;
+  -moz-border-radius-bottomright: 56px;
+  -webkit-border-top-left-radius: 61px;
+  -webkit-border-top-right-radius: 61px;
+  -webkit-border-bottom-left-radius: 52px;
+  -webkit-border-bottom-right-radius: 56px;
+  border-top-left-radius: 61px;
+  border-top-right-radius: 61px;
+  border-bottom-left-radius: 52px;
+  border-bottom-right-radius: 56px;
+  background-image: linear-gradient(to right, blacK, #080f4b);
+  margin: 3mm;
+}
+
+.aBonos {
+  color: #06bebe;
+  text-align: center;
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 8mm;
+  padding: 1mm;
+}
+
+.formatoItalica {
+  color: #e4ecec;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 7mm;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.eSpecialistas {
+  padding: 1cm;
+}
+
+/*Grilla contacto*/
+.grid-eLcontacto {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(2, 230px);
+  gap: 0px 0px;
+  text-align: center;
+  justify-content: stretch;
+  font-size: 1.5rem;
+  grid-template-areas: "bannerUno bannerUno bannerUno " "tWiter gRam eLlinke";
+}
+
+.bannerUno {
+  grid-area: bannerUno;
+  background-image: linear-gradient(to right, #131586, #263a46);
+  padding: 25mm;
+  font-family: Tourney;
+  font-size: 5cm;
+  color: red;
+}
+
+.tWiter {
+  grid-area: tWiter;
+  background-color: #272725;
+}
+
+.tWiter img {
+  height: 150px;
+  width: 150px;
+  margin: 7mm 1mm 1mm 5mm;
+}
+
+.gRam {
+  grid-area: gRam;
+  background-color: #2a292c;
+}
+
+.gRam img {
+  height: 150px;
+  width: 150px;
+  margin: 7mm 1mm 1mm 5mm;
+}
+
+.eLlinke {
+  grid-area: eLlinke;
+  background-color: #272725;
+}
+
+.eLlinke img {
+  height: 150px;
+  width: 150px;
+  margin: 7mm 1mm 1mm 0mm;
+}
+
+/*Grilla lOsabonos*/
+.grid-lAscuotas {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(2, 230px);
+  gap: 0px 0px;
+  text-align: center;
+  justify-content: stretch;
+  font-size: 1.5rem;
+  grid-template-areas: "gRantitulo gRantitulo gRantitulo" "mInimos cAlculadora mEnsuales";
+}
+
+.gRantitulo {
+  grid-area: gRantitulo;
+  background-image: linear-gradient(to right, #1c1c20, #463826);
+  padding: 20mm;
+  font-family: Tourney;
+  font-size: 5cm;
+  color: #1b27d6;
+}
+
+.mInimos {
+  grid-area: mInimos;
+  background-image: linear-gradient(to right, #1c1c20, #463826);
+  padding: 10mm;
+}
+
+.cAlculadora {
+  grid-area: cAlculadora;
+  background-color: #1a191f;
+}
+
+.cAlculadora img {
+  height: 150px;
+  width: 250px;
+  margin: 7mm 1mm 1mm 5mm;
+  border-radius: 2ch;
+  border: solid;
+  border-color: #a4c70a;
+}
+
+.mEnsuales {
+  grid-area: mEnsuales;
+  background-image: linear-gradient(to right, #1c1c20, #463826);
+  padding: 10mm;
+}
+
+/*Grilla accidente*/
+.grid-cHoque {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(2, 190px);
+  gap: 0px 0px;
+  text-align: center;
+  justify-content: stretch;
+  font-size: 1.5rem;
+  grid-template-areas: "bannerUno bannerUno bannerUno " "sUfrio cHocada sIniestro";
+}
+
+.bannerUno {
+  grid-area: bannerUno;
+  background-image: linear-gradient(to right, #050444, #282338);
+  padding: 15mm;
+  font-family: Tourney;
+  font-size: 5cm;
+  color: #47d61b;
+}
+
+.sUfrio {
+  grid-area: sUfrio;
+  background-image: linear-gradient(to right, #1c1c20, #463826);
+  padding: 10mm;
+}
+
+.cHocada {
+  grid-area: cHocada;
+  background-color: #120744;
+}
+
+.cHocada img {
+  height: 150px;
+  width: 250px;
+  margin: 7mm 1mm 1mm 5mm;
+  border-radius: 2ch;
+  border: solid;
+  border-color: #759608;
+  padding: 5mm;
+}
+
+.sIniestro {
+  grid-area: sIniestro;
+  background-image: linear-gradient(to right, #1c1c20, #463826);
+  padding: 10mm;
+}
+
+.eRror {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: red;
+  margin-top: 5cm;
+}
+
+.nOtfound {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5cm;
+}
+
+/*menu nav*/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 1cm;
+  width: 80%;
+  line-height: 150px;
+}
+.menu li {
+  padding: 1mm;
+  margin: auto;
+  padding: 0 10px;
+}
+.menu li a {
+  color: #0e0c80;
+  font-size: 25px;
+  font-weight: auto;
+  padding: 6mm;
+  text-transform: uppercase;
+  border: solid;
+  border-color: #0e0c80;
+  background-color: #0f0000;
+  font-family: "Limelight", cursive;
+}
+.menu li a:hover {
+  background-color: grey;
+  color: #210849;
+  text-decoration-line: none;
+  padding: 20px;
+  border-style: solid;
+  border-color: #011b01;
+}
+
+/*header*/
+.topheader {
+  padding: 1;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, blacK, #080f4b);
+}
+.topheader .topnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+  -moz-box-shadow: inset -47px 18px 17px #000000;
+  -webkit-box-shadow: inset -47px 18px 17px #000000;
+  box-shadow: inset -47px 18px 17px #000000;
+}
+
+/*logo*/
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 20%;
+}
+.logo img {
+  display: flex;
+  flex-wrap: wrap;
+  height: 6cm;
+  border-radius: 30%;
+  border: solid;
+  border-color: #df2909;
+  transition: all;
+  margin: 1cm;
+}
+.logo img:hover {
+  height: 6cm;
+  border-color: #0a1191;
+  border-radius: 10%;
+  border-style: dotted;
+}
+
+/*grid*/
+.grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 1mm;
+}
+.grid div {
+  background-color: #0f0f0f;
+  padding: 1em;
+  text-align: center;
+  padding: 3mm;
+  border: solid;
+}
+
+.iNtegrantes {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 3mm;
+  padding: 1cm;
+}
+.iNtegrantes div {
+  background-color: black;
+  padding: 1em;
+  color: #a7a791;
+  text-align: center;
+  padding: 2mm;
+  border: solid;
+  border-style: double;
+  border-color: #e4dad7;
+}
+
+/*cuadro penal*/
+.dElitos {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 3mm;
+  padding: 1cm;
+}
+.dElitos div {
+  background-color: black;
+  padding: 1em;
+  color: #a7a791;
+  text-align: center;
+  padding: 2mm;
+  border: solid;
+  border-style: double;
+  border-color: #e4dad7;
+}
+
+/*cuadro laboral*/
+.elLaboral {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 3mm;
+  padding: 1cm;
+}
+.elLaboral div {
+  background-color: black;
+  padding: 1em;
+  color: #d8d81f;
+  text-align: center;
+  padding: 2mm;
+  border: solid;
+  border-style: double;
+  border-color: #e4dad7;
+}
+
+/*Tarjetas*/
+/*honorarios */
+.hOnorarios {
+  background-color: #011b01;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  height: 200px;
+  width: 1000px;
+}
+
+.hOnorarios__img {
+  width: 300px;
+  height: 150px;
+  margin-right: 30px;
+}
+
+.hOnorarios__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: gold;
+}
+
+.hOnorarios__parrafo {
+  line-height: 28px;
+  font-size: 10rem;
+}
+
+.hOnorarios li {
+  color: #e6d2d2;
+  font-size: 5mm;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/*Tarjeta Civil Alimentos*/
+.tAlimentos {
+  background-color: #011b01;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  height: 200px;
+  width: 1000px;
+}
+
+.tAlimentos_img {
+  width: 200px;
+  height: 150px;
+  margin-right: 30px;
+}
+
+.tAlimentos__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tAlimentos__parrafo {
+  line-height: 28px;
+  font-size: 10rem;
+}
+
+.tAlimentos li {
+  color: #0d6863;
+  font-size: 5mm;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/*Tarjeta Laboral*/
+.tNegro {
+  background-color: #01010c;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  height: 200px;
+  width: 1000px;
+}
+
+.tNegro__img {
+  width: 100px;
+  height: 150px;
+  margin-right: 30px;
+}
+
+.tNegro__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #bdb4b4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tNegro__parrafo {
+  line-height: 28px;
+  font-size: 1rem;
+}
+
+.tNegro li {
+  margin-left: 2cm;
+  color: #4d5253;
+  font-size: 5mm;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/*Tarjeta Penal*/
+.vIolencia {
+  background-color: #010114;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  height: 200px;
+  width: 1000px;
+}
+
+.vIolencia__img {
+  width: 200px;
+  height: 150px;
+  margin-right: 30px;
+}
+
+.vIolencia__titulo {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #eff0e7;
+  font-size: 13mm;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.Violencia__parrafo {
+  line-height: 28px;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.vIolencia li {
+  color: #12afaf;
+  font-size: 5mm;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0mm;
+}
+
+.pYmes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pLanlaboral {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pLancomercial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pLanintegral {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*bucle*/
+.bg-1 {
+  background-color: #11053a;
+}
+
+.bg-2 {
+  background-color: #333232;
+}
+
+.bg-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  font-size: 6mm;
+}
+
+.bg-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  font-size: 6mm;
+}
+
+/*responsive*/
+@media screen and (max-width: 740px) {
+  body {
+    background-color: #2e18ad;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #064d15;
+  }
+
+  .logo img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 4cm;
+    margin: auto;
+    border-color: #86b406;
+  }
+
+  footer {
+    background-color: #dfee09;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 30mm;
+  }
+
+  .grid img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 30mm;
+    height: 4cm;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iNtegrantes {
+    display: flex;
+    flex-direction: column;
+    column-gap: 30mm;
+  }
+
+  .bAnner {
+    display: flex;
+    flex-direction: column;
+    column-gap: 30mm;
+  }
+
+  .cIvil {
+    display: flex;
+    flex-direction: column;
+    column-gap: 30mm;
+  }
+
+  .lAboral {
+    display: flex;
+    flex-direction: column;
+    column-gap: 30mm;
+  }
+
+  .pEnal {
+    display: flex;
+    flex-direction: column;
+    column-gap: 30mm;
+  }
+
+  .cOntacto {
+    display: flex;
+    flex-direction: column;
+    column-gap: 30mm;
+  }
+
+  .dElitos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+  }
+
+  .dElitos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 5cm;
+  }
+
+  .dElitos img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 4cm;
+  }
+
+  .elLaboral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+  }
+
+  .elLaboral div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 5cm;
+  }
+
+  .elLaboral img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 4cm;
+  }
+
+  .grid-eLcontacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 30mm;
+  }
+
+  .bannerUno {
+    grid-area: bannerUno;
+    background-image: linear-gradient(to right, #1d8613, #263a46);
+    padding: 25mm;
+    font-family: Tourney;
+    font-size: 2cm;
+  }
+
+  .tWiter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 5cm;
+  }
+
+  .tWiter img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 3cm;
+  }
+
+  .gRam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 5cm;
+  }
+
+  .gRam img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 3cm;
+  }
+
+  .eLlinke {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 5cm;
+  }
+
+  .eLlinke img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 3cm;
+  }
+
+  .grid-lAscuotas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 30mm;
+  }
+
+  .gRantitulo {
+    grid-area: bannerUno;
+    background-image: linear-gradient(to right, #1d8613, #263a46);
+    padding: 25mm;
+    font-family: Tourney;
+    font-size: 2cm;
+  }
+
+  .mInimos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 5cm;
+  }
+
+  .cAlculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 5cm;
+  }
+
+  .cAlculadora img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 3cm;
+  }
+
+  .mEnsuales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 5cm;
+  }
+
+  .grid-cHoque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 30mm;
+  }
+
+  .bannerUno {
+    grid-area: bannerUno;
+    background-image: linear-gradient(to right, #1d8613, #263a46);
+    padding: 25mm;
+    font-family: Tourney;
+    font-size: 2cm;
+  }
+
+  .sUfrio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 5cm;
+  }
+
+  .cHocada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 5cm;
+  }
+
+  .cHocada img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 3cm;
+  }
+
+  .sIniestro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100mm;
+    height: 5cm;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
