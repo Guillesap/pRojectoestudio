@@ -4,7 +4,7 @@
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
-  color: #0e0c80;
+  color: #107594;
 }
 
 /*globales*/
@@ -381,19 +381,19 @@ section {
   padding: 0 10px;
 }
 .menu li a {
-  color: #0e0c80;
+  color: #107594;
   font-size: 25px;
   font-weight: auto;
   padding: 6mm;
   text-transform: uppercase;
   border: solid;
-  border-color: #0e0c80;
+  border-color: #107594;
   background-color: #0f0000;
   font-family: "Limelight", cursive;
 }
 .menu li a:hover {
   background-color: grey;
-  color: #010a0e;
+  color: #210849;
   text-decoration-line: none;
   padding: 20px;
   border-style: solid;
