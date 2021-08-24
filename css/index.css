@@ -393,7 +393,7 @@ section {
 }
 .menu li a:hover {
   background-color: grey;
-  color: #bb0c0c;
+  color: #010a0e;
   text-decoration-line: none;
   padding: 20px;
   border-style: solid;
@@ -435,7 +435,7 @@ section {
 }
 .logo img:hover {
   height: 6cm;
-  border-color: #0a1191;
+  border-color: #0a7691;
   border-radius: 10%;
   border-style: dotted;
 }
