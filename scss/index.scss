@@ -353,7 +353,6 @@
     margin:0;
     font-size: 6mm;
 }
-
 /*responsive*/
 @media screen and (max-width: 740px){
     body{
@@ -371,12 +370,12 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        height: 4cm;
+        height: 6cm;
         margin: auto;
-        border-color: #86b406;
+        border-color: #0683b4;
     }
     footer{
-        background-color: rgb(223, 238, 9);
+        background-color: rgb(9, 177, 31);
     }
     .grid{
         display: flex;
@@ -430,41 +429,37 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        column-gap: 100mm;
+        column-gap: 30mm;
     }
     .dElitos div{
         display: flex;
         flex-direction: column;
         align-items: center;
-        column-gap: 100mm;
-        height: 5cm;
+        column-gap: 30mm;
     }
     .dElitos img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        column-gap: 100mm;
-        height: 4cm;
+        column-gap: 30mm;
     }
     .elLaboral{
         display: flex;
         flex-direction: column;
         align-items: center;
-        column-gap: 100mm;
+        column-gap: 30mm;
     }
     .elLaboral div{
         display: flex;
         flex-direction: column;
         align-items: center;
         column-gap: 100mm;
-        height: 5cm;
     }
     .elLaboral img{
         display: flex;
         flex-direction: column;
         align-items: center;
         column-gap: 100mm;
-        height: 4cm;
     }
     .grid-eLcontacto {
         display: flex;
@@ -474,7 +469,7 @@
     }
     .bannerUno {
 	    grid-area: bannerUno;
-	    background-image: linear-gradient(to right,rgb(29, 134, 19),rgb(38, 58, 70));
+	    background-image: linear-gradient(to right,rgb(19, 27, 134),rgb(38, 58, 70));
 	    padding: 25mm;
 	    font-family: Tourney;
 	    font-size: 2cm;
@@ -484,7 +479,6 @@
         flex-direction: column;
         align-items: center;
         column-gap: 100mm;
-        height: 5cm;
     }
     .tWiter img {
         display: flex;
@@ -492,13 +486,15 @@
         align-items: center;
         column-gap: 100mm;
         height: 3cm;
+        border: solid;
+        border-color: #059c19;
+        margin: 0;
     }
     .gRam {
         display: flex;
         flex-direction: column;
         align-items: center;
         column-gap: 100mm;
-        height: 5cm;
     }
     .gRam img {
         display: flex;
@@ -506,13 +502,15 @@
         align-items: center;
         column-gap: 100mm;
         height: 3cm;
+        border: solid;
+        border-color: #059c19;
+        margin: 0;
     }
     .eLlinke{
         display: flex;
         flex-direction: column;
         align-items: center;
-        column-gap: 100mm;
-        height: 5cm;
+    
     }
     .eLlinke img {
         display: flex;
@@ -520,6 +518,9 @@
         align-items: center;
         column-gap: 100mm;
         height: 3cm;
+        border: solid;
+        border-color: #059c19;
+        margin: 0;
     }
     .grid-lAscuotas{
         display: flex;

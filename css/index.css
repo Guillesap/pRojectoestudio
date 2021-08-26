@@ -30,7 +30,7 @@ form {
 footer {
   margin: 0;
   text-align: center;
-  background-image: linear-gradient(to right, black, grey);
+  background-image: linear-gradient(to right, #080f4b, blacK);
 }
 
 article, footer {
@@ -215,40 +215,46 @@ section {
   padding: 25mm;
   font-family: Tourney;
   font-size: 5cm;
-  color: red;
+  color: #09204b;
 }
 
 .tWiter {
   grid-area: tWiter;
-  background-color: #272725;
 }
 
 .tWiter img {
   height: 150px;
   width: 150px;
   margin: 7mm 1mm 1mm 5mm;
+  border: solid;
+  border-color: #056c9c;
+  margin: 0;
 }
 
 .gRam {
   grid-area: gRam;
-  background-color: #2a292c;
 }
 
 .gRam img {
   height: 150px;
   width: 150px;
   margin: 7mm 1mm 1mm 5mm;
+  border: solid;
+  border-color: #056c9c;
+  margin: 0;
 }
 
 .eLlinke {
   grid-area: eLlinke;
-  background-color: #272725;
 }
 
 .eLlinke img {
   height: 150px;
   width: 150px;
   margin: 7mm 1mm 1mm 0mm;
+  border: solid;
+  border-color: #056c9c;
+  margin: 0;
 }
 
 /*Grilla lOsabonos*/
@@ -732,13 +738,13 @@ section {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    height: 4cm;
+    height: 6cm;
     margin: auto;
-    border-color: #86b406;
+    border-color: #0683b4;
   }
 
   footer {
-    background-color: #dfee09;
+    background-color: #09b11f;
   }
 
   .grid {
@@ -802,30 +808,28 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    column-gap: 100mm;
+    column-gap: 30mm;
   }
 
   .dElitos div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    column-gap: 100mm;
-    height: 5cm;
+    column-gap: 30mm;
   }
 
   .dElitos img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    column-gap: 100mm;
-    height: 4cm;
+    column-gap: 30mm;
   }
 
   .elLaboral {
     display: flex;
     flex-direction: column;
     align-items: center;
-    column-gap: 100mm;
+    column-gap: 30mm;
   }
 
   .elLaboral div {
@@ -833,7 +837,6 @@ section {
     flex-direction: column;
     align-items: center;
     column-gap: 100mm;
-    height: 5cm;
   }
 
   .elLaboral img {
@@ -841,7 +844,6 @@ section {
     flex-direction: column;
     align-items: center;
     column-gap: 100mm;
-    height: 4cm;
   }
 
   .grid-eLcontacto {
@@ -853,7 +855,7 @@ section {
 
   .bannerUno {
     grid-area: bannerUno;
-    background-image: linear-gradient(to right, #1d8613, #263a46);
+    background-image: linear-gradient(to right, #131b86, #263a46);
     padding: 25mm;
     font-family: Tourney;
     font-size: 2cm;
@@ -864,7 +866,6 @@ section {
     flex-direction: column;
     align-items: center;
     column-gap: 100mm;
-    height: 5cm;
   }
 
   .tWiter img {
@@ -873,6 +874,9 @@ section {
     align-items: center;
     column-gap: 100mm;
     height: 3cm;
+    border: solid;
+    border-color: #059c19;
+    margin: 0;
   }
 
   .gRam {
@@ -880,7 +884,6 @@ section {
     flex-direction: column;
     align-items: center;
     column-gap: 100mm;
-    height: 5cm;
   }
 
   .gRam img {
@@ -889,14 +892,15 @@ section {
     align-items: center;
     column-gap: 100mm;
     height: 3cm;
+    border: solid;
+    border-color: #059c19;
+    margin: 0;
   }
 
   .eLlinke {
     display: flex;
     flex-direction: column;
     align-items: center;
-    column-gap: 100mm;
-    height: 5cm;
   }
 
   .eLlinke img {
@@ -905,6 +909,9 @@ section {
     align-items: center;
     column-gap: 100mm;
     height: 3cm;
+    border: solid;
+    border-color: #059c19;
+    margin: 0;
   }
 
   .grid-lAscuotas {
